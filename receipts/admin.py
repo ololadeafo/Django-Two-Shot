@@ -1,3 +1,17 @@
 from django.contrib import admin
+from .models import ExpenseCategory, Account, Receipt
 
-# Register your models here.
+
+@admin.register(ExpenseCategory)
+class ExpenseCategory(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Account)
+class Account(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Receipt)
+class Receipt(admin.ModelAdmin):
+    pass
